@@ -1,0 +1,38 @@
+baseurl = "https://maxbru.net"
+languageCode = "en-us"
+title = "Maxime Brunet"
+theme = "identity"
+
+ignoreFiles = [ "\\.gitkeep$" ]
+disableKinds = ["page", "section", "taxonomy", "taxonomyTerm", "RSS", "sitemap", "robotsTXT", "404"]
+
+[params]
+  author = "Maxime Brunet"
+  custom_css = ["background.css"]
+
+  [params.personal]
+    avatar = "max.jpg"
+
+  [params.contact]
+    postURL = "https://formcarry.com/s/zNZPuk75ZwY"
+
+    enable = true
+    title = "Contact Me!"
+    namePlaceholder = "Name"
+    emailPlaceholder = "Email"
+    messagePlaceholder = "Message"
+    buttonText = "Send"
+    success = "Thank you for contacting me."
+    error = "Message could not be send."
+
+  [[params.social]]
+    title = "Github"
+    icon = "fa-github"
+    link = "https://github.com/maxbrunet"
+    target = "_blank"
+
+  [[params.social]]
+    title = "LinkedIn"
+    icon = "fa-linkedin"
+    link = "https://linkedin.com/in/maxbrunet/en"
+    target = "_blank"
