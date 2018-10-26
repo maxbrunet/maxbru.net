@@ -36,3 +36,8 @@ disableKinds = ["page", "section", "taxonomy", "taxonomyTerm", "RSS", "sitemap",
     icon = "fa-linkedin"
     link = "https://linkedin.com/in/maxbrunet/en"
     target = "_blank"
+
+  [[params.credits]]
+    title = "HTML5UP"
+    text = "Design by"
+    link = "https://html5up.net"
