@@ -8,7 +8,7 @@ disableKinds = ["page", "section", "taxonomy", "taxonomyTerm", "RSS", "sitemap",
 
 [params]
   author = "Maxime Brunet"
-  custom_css = ["background.css"]
+  custom_css = ["assets/css/background.css"]
 
   [params.personal]
     avatar = "max.jpg"
