@@ -4,7 +4,7 @@ title = "Maxime Brunet"
 theme = "identity"
 
 ignoreFiles = [ "\\.gitkeep$" ]
-disableKinds = ["page", "section", "taxonomy", "taxonomyTerm", "RSS", "sitemap", "robotsTXT", "404"]
+disableKinds = ["page", "section", "taxonomy", "taxonomyTerm", "RSS", "sitemap", "robotsTXT"]
 
 [params]
   author = "Maxime Brunet"
