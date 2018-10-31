@@ -8,6 +8,13 @@ disableKinds = ["page", "section", "taxonomy", "taxonomyTerm", "RSS", "sitemap",
 
 [params]
   author = "Maxime Brunet"
+
+  favicon_ico = "favicon.ico"
+  favicon_ico_sizes = "16x16 32x32 48x48"
+  appleicon = "apple-touch-icon-precomposed.png"
+  favicon_png = "favicon.png"
+  favicon_png_sizes = "96x96"
+
   custom_css = ["assets/css/background.css"]
 
   [params.personal]
