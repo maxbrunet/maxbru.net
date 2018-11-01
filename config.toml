@@ -7,7 +7,9 @@ ignoreFiles = [ "\\.gitkeep$" ]
 disableKinds = ["page", "section", "taxonomy", "taxonomyTerm", "RSS", "sitemap", "robotsTXT"]
 
 [params]
+  name = "Maxime Brunet"
   author = "Maxime Brunet"
+  description = "About Maxime Brunet. Social Media and Contact."
 
   favicon_ico = "favicon.ico"
   favicon_ico_sizes = "16x16 32x32 48x48"
