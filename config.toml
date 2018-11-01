@@ -6,6 +6,8 @@ theme = "identity"
 ignoreFiles = [ "\\.gitkeep$" ]
 disableKinds = ["page", "section", "taxonomy", "taxonomyTerm", "RSS", "sitemap", "robotsTXT"]
 
+googleAnalytics = "UA-128486548-1"
+
 [params]
   name = "Maxime Brunet"
   author = "Maxime Brunet"
