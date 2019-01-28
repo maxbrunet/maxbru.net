@@ -1,3 +1,7 @@
 [submodule "themes/identity"]
 	path = themes/identity
 	url = https://github.com/aerohub/hugo-identity-theme.git
+[submodule "github.com/FortAwesome/Font-Awesome"]
+	path = assets/Font-Awesome
+	url = https://github.com/FortAwesome/Font-Awesome.git
+	shallow = true
