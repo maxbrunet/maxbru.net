@@ -41,6 +41,12 @@ disableKinds = ["page", "section", "taxonomy", "taxonomyTerm", "RSS", "sitemap",
     target = "_blank"
 
   [[params.social]]
+    title = "Gitlab"
+    icon = "fab fa-gitlab"
+    link = "https://gitlab.com/maxbrunet"
+    target = "_blank"
+
+  [[params.social]]
     title = "LinkedIn"
     icon = "fab fa-linkedin"
     link = "https://linkedin.com/in/maxbrunet/en"
