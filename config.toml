@@ -36,7 +36,7 @@ disableKinds = ["page", "section", "taxonomy", "taxonomyTerm", "RSS", "sitemap",
 
   [[params.social]]
     title = "Github"
-    icon = "fab fa-github"
+    icon = "fa-github"
     link = "https://github.com/maxbrunet"
     target = "_blank"
 
@@ -48,7 +48,7 @@ disableKinds = ["page", "section", "taxonomy", "taxonomyTerm", "RSS", "sitemap",
 
   [[params.social]]
     title = "LinkedIn"
-    icon = "fab fa-linkedin"
+    icon = "fa-linkedin"
     link = "https://linkedin.com/in/maxbrunet/en"
     target = "_blank"
 
