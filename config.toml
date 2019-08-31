@@ -1,58 +1,20 @@
 baseurl = "https://maxbru.net"
 languageCode = "en-us"
 title = "Maxime Brunet"
-theme = "identity"
+theme = "vncnt-hugo"
 
 ignoreFiles = [ "\\.gitkeep$" ]
 disableKinds = ["page", "section", "taxonomy", "taxonomyTerm", "RSS", "sitemap", "robotsTXT"]
 
 [params]
-  name = "Maxime Brunet"
   author = "Maxime Brunet"
   description = "About Maxime Brunet. Social Media and Contact."
-
-  favicon_ico = "favicon.ico"
-  favicon_ico_sizes = "16x16 32x32 48x48"
-  appleicon = "apple-touch-icon-precomposed.png"
-  favicon_png = "favicon.png"
-  favicon_png_sizes = "96x96"
-
-  custom_css = ["assets/css/custom.css"]
-
-  [params.personal]
-    avatar = "max.jpg"
+  bio = "---"
+  email = ""
+  avatar = "images/avatars/max.jpg"
+  favicon = "images/icons/favicon.ico"
 
   [params.contact]
-    postURL = "https://formcarry.com/s/zNZPuk75ZwY"
-
-    enable = true
-    title = "Contact Me!"
-    namePlaceholder = "Name"
-    emailPlaceholder = "Email"
-    messagePlaceholder = "Message"
-    buttonText = "Send"
-    success = "Thank you for contacting me."
-    error = "Message could not be send."
-
-  [[params.social]]
-    title = "Github"
-    icon = "fab fa-github"
-    link = "https://github.com/maxbrunet"
-    target = "_blank"
-
-  [[params.social]]
-    title = "Gitlab"
-    icon = "fab fa-gitlab"
-    link = "https://gitlab.com/maxbrunet"
-    target = "_blank"
-
-  [[params.social]]
-    title = "LinkedIn"
-    icon = "fab fa-linkedin"
-    link = "https://linkedin.com/in/maxbrunet/en"
-    target = "_blank"
-
-  [[params.credits]]
-    title = "HTML5UP"
-    text = "Design by"
-    link = "https://html5up.net"
+    github = "https://github.com/maxbrunet"
+    gitlab = "https://gitlab.com/maxbrunet"
+    linkedin = "https://linkedin.com/in/maxbrunet/en"
