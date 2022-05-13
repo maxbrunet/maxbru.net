@@ -6,6 +6,8 @@ theme = "vncnt-hugo"
 ignoreFiles = [ "\\.gitkeep$" ]
 disableKinds = ["page", "section", "taxonomy", "taxonomyTerm", "RSS", "sitemap", "robotsTXT"]
 
+_merge = "none"
+
 [params]
   author = "Maxime Brunet"
   description = "About Maxime Brunet. Social Media and Contact."
