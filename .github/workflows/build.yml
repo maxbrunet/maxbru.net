@@ -27,16 +27,11 @@ jobs:
           submodules: true  # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
 
-      - name: Read .env file
-        id: env-file
-        run: |
-          source .env
-          printf '::set-output name=HUGO_VERSION::%s\n' "${HUGO_VERSION}"
-
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@c03b5dbed22245418539b65eb9a3b1d5fdd9a0a6 # tag=v2.5.0
         with:
-          hugo-version: '${{ steps.env-file.outputs.HUGO_VERSION }}'
+          # renovate: datasource=github-releases depName=gohugoio/hugo extractVersion=^v(?<version>.+)$
+          hugo-version: 0.100.2
 
       - name: Build
         run: hugo --minify

@@ -1,0 +1,46 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:base",
+    ":automergeDigest",
+    ":automergeMinor",
+    ":dependencyDashboardApproval",
+    ":rebaseStalePrs",
+    ":semanticCommits",
+    ":semanticCommitScope(deps)",
+    "docker:pinDigests",
+    "helpers:pinGitHubActionDigests"
+  ],
+  "assignees": ["maxbrunet"],
+  "internalChecksFilter": "strict",
+  "platformAutomerge": true,
+  "git-submodules": {
+    "enabled": true
+  },
+  "packageRules": [
+    {
+      "matchPackageNames": [
+        "docker.io/peaceiris/hugo",
+        "gohugoio/hugo"
+      ],
+      "commitMessageTopic": "Hugo",
+      "groupName": "hugo"
+    },
+    {
+      "matchPackageNames": [
+        "docker.io/peaceiris/hugo",
+        "gohugoio/hugo",
+        "themes/vncnt-hugo"
+      ],
+      "automerge": false,
+      "semanticCommitType": "build"
+    }
+  ],
+  "regexManagers": [
+    {
+      "description": "Update version keys in YAML files",
+      "fileMatch": ["(^|/).*.ya?ml$"],
+      "matchStrings": ["# renovate: datasource=(?<datasource>.+?) depName=(?<depName>.+?)(?: packageName=(?<packageName>.+?))?(?: versioning=(?<versioning>.+?))?(?: extractVersion=(?<extractVersion>.+?))?\\s*[\\w-_]*version: (?<currentValue>.+?)\\s"]
+    }
+  ]
+}

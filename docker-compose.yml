@@ -1,7 +1,7 @@
 version: '3'
 services:
   hugo:
-    image: 'docker.io/peaceiris/hugo:v${HUGO_VERSION}'
+    image: docker.io/peaceiris/hugo:v0.100.2@sha256:1bc020a63fff9171d27a93825ecf56a7518a4c848c6510bfd62091d8af232cd4
     command:
       - server
       - --bind=0.0.0.0
