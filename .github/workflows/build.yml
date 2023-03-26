@@ -28,7 +28,7 @@ jobs:
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
 
       - name: Setup Hugo
-        uses: peaceiris/actions-hugo@c03b5dbed22245418539b65eb9a3b1d5fdd9a0a6 # tag=v2.5.0
+        uses: peaceiris/actions-hugo@16361eb4acea8698b220b76c0d4e84e1fd22c61d # v2.6.0
         with:
           # renovate: datasource=github-releases depName=gohugoio/hugo extractVersion=^v(?<version>.+)$
           hugo-version: 0.100.2
