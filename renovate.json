@@ -1,15 +1,13 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:base",
+    "config:best-practices",
     ":automergeDigest",
     ":automergeMinor",
     ":dependencyDashboardApproval",
     ":rebaseStalePrs",
     ":semanticCommits",
-    ":semanticCommitScope(deps)",
-    "docker:pinDigests",
-    "helpers:pinGitHubActionDigests"
+    ":semanticCommitScope(deps)"
   ],
   "assignees": ["maxbrunet"],
   "internalChecksFilter": "strict",
@@ -39,6 +37,7 @@
   "regexManagers": [
     {
       "description": "Update version keys in YAML files",
+      "customType": "regex",
       "fileMatch": ["(^|/).*.ya?ml$"],
       "matchStrings": ["# renovate: datasource=(?<datasource>.+?) depName=(?<depName>.+?)(?: packageName=(?<packageName>.+?))?(?: versioning=(?<versioning>.+?))?(?: extractVersion=(?<extractVersion>.+?))?\\s*[\\w-_]*version: (?<currentValue>.+?)\\s"]
     }
