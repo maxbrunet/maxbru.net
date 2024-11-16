@@ -1,7 +1,7 @@
 version: '3'
 services:
   hugo:
-    image: docker.io/peaceiris/hugo:v0.119.0@sha256:7687d9232e4730506617cd1ea7f039887cd5878d326fbb86f52223cf5992c0db
+    image: docker.io/peaceiris/hugo:v0.138.0@sha256:79802ae2ea639e647b892a02940001b16d0a38ed34ad1bb32d7038dd555d8e59
     command:
       - server
       - --bind=0.0.0.0
