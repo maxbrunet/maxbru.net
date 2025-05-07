@@ -9,7 +9,9 @@
     ":semanticCommits",
     ":semanticCommitScope(deps)"
   ],
-  "assignees": ["maxbrunet"],
+  "assignees": [
+    "maxbrunet"
+  ],
   "internalChecksFilter": "strict",
   "platformAutomerge": true,
   "git-submodules": {
@@ -17,7 +19,10 @@
   },
   "packageRules": [
     {
-      "matchPackageNames": ["docker.io/peaceiris/hugo", "gohugoio/hugo"],
+      "matchPackageNames": [
+        "docker.io/peaceiris/hugo",
+        "gohugoio/hugo"
+      ],
       "commitMessageTopic": "Hugo",
       "groupName": "hugo"
     },
@@ -35,7 +40,9 @@
     {
       "description": "Update version keys in YAML files",
       "customType": "regex",
-      "fileMatch": ["(^|/).*.ya?ml$"],
+      "managerFilePatterns": [
+        "/(^|/).*.ya?ml$/"
+      ],
       "matchStrings": [
         "# renovate: datasource=(?<datasource>.+?) depName=(?<depName>.+?)(?: packageName=(?<packageName>.+?))?(?: versioning=(?<versioning>.+?))?(?: extractVersion=(?<extractVersion>.+?))?\\s*[\\w-_]*version: (?<currentValue>.+?)\\s"
       ]
