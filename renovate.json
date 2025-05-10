@@ -35,7 +35,7 @@
     {
       "description": "Update version keys in YAML files",
       "customType": "regex",
-      "fileMatch": ["(^|/).*.ya?ml$"],
+      "managerFilePatterns": ["/(^|/).*.ya?ml$/"],
       "matchStrings": [
         "# renovate: datasource=(?<datasource>.+?) depName=(?<depName>.+?)(?: packageName=(?<packageName>.+?))?(?: versioning=(?<versioning>.+?))?(?: extractVersion=(?<extractVersion>.+?))?\\s*[\\w-_]*version: (?<currentValue>.+?)\\s"
       ]
