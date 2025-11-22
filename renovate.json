@@ -7,7 +7,8 @@
     ":dependencyDashboardApproval",
     ":rebaseStalePrs",
     ":semanticCommits",
-    ":semanticCommitScope(deps)"
+    ":semanticCommitScope(deps)",
+    "customManagers:githubActionsVersions"
   ],
   "assignees": ["maxbrunet"],
   "internalChecksFilter": "strict",
@@ -17,8 +18,7 @@
   },
   "packageRules": [
     {
-      "matchPackageNames": ["docker.io/peaceiris/hugo", "gohugoio/hugo"],
-      "commitMessageTopic": "Hugo",
+      "matchSourceUrls": ["https://github.com/gohugoio/hugo"],
       "groupName": "hugo"
     },
     {
@@ -29,16 +29,6 @@
       ],
       "automerge": false,
       "semanticCommitType": "build"
-    }
-  ],
-  "customManagers": [
-    {
-      "description": "Update version keys in YAML files",
-      "customType": "regex",
-      "managerFilePatterns": ["/(^|/).*.ya?ml$/"],
-      "matchStrings": [
-        "# renovate: datasource=(?<datasource>.+?) depName=(?<depName>.+?)(?: packageName=(?<packageName>.+?))?(?: versioning=(?<versioning>.+?))?(?: extractVersion=(?<extractVersion>.+?))?\\s*[\\w-_]*version: (?<currentValue>.+?)\\s"
-      ]
     }
   ]
 }

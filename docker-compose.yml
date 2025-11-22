@@ -1,7 +1,7 @@
 version: '3'
 services:
   hugo:
-    image: docker.io/peaceiris/hugo:v0.146.4@sha256:ca61fa7cfb82777ff89380a3024b75d3ba8c3cf36c23abf229d79ab9103688e9
+    image: ghcr.io/gohugoio/hugo:v0.152.2@sha256:d2952bdcfa3b0b25ca3d2104394c2883ffa86abb88855515f01b23b5e8f1355b
     command:
       - server
       - --bind=0.0.0.0
@@ -9,4 +9,4 @@ services:
     ports:
       - 127.0.0.1:1313:1313
     volumes:
-      - .:/src
+      - .:/project
