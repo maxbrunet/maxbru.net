@@ -19,14 +19,12 @@
   "packageRules": [
     {
       "matchSourceUrls": ["https://github.com/gohugoio/hugo"],
+      "automerge": false,
+      "semanticCommitType": "build",
       "groupName": "hugo"
     },
     {
-      "matchPackageNames": [
-        "docker.io/peaceiris/hugo",
-        "gohugoio/hugo",
-        "themes/vncnt-hugo"
-      ],
+      "matchPackageNames": ["themes/vncnt-hugo"],
       "automerge": false,
       "semanticCommitType": "build"
     }
